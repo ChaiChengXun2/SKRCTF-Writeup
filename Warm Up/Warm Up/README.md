@@ -2,7 +2,7 @@
 
 ## Basic Information
 Category: Warm Up  
-Difficulty: Easy  
+Difficulty: Beginner  
 Points: 20  
 
 ## Solving
