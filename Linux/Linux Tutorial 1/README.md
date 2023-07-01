@@ -3,7 +3,7 @@
 ## Basic Information
 Category: Linux    
 Difficulty: Easy  
-Points: 100  
+Points: 20  
 
 ## Solving
 The concept of this challenge is to familiarise you with Linux. 
