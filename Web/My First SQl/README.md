@@ -16,6 +16,6 @@ Through trial and error, I was able to find out that MySQL is used for this chal
 
 **Step 2:**   
 Copy and paste the flag to complete the challenge  
-```KR{Do_not_forget_to_escape_user_input_7f102f}```
+```SKR{Do_not_forget_to_escape_user_input_7f102f}```
 
 **SOLVED**  
