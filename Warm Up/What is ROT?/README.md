@@ -1,22 +1,38 @@
-# What is ROT?
+# What is ROT? - Beginner ROT Cipher Challenge
 
 ## Basic Information
-Category: Warm Up  
-Difficulty: Beginner  
-Points: 50  
+- **Category:** Warm Up
+- **Difficulty:** Beginner
+- **Points:** 50
 
 ## Solving
-The main idea is to familiarise yourself with ROT encryption algorithmn. ROT is a symmetric encryption algorithmn or shift cipher. ROT works by shifting each letter in the alphabet a certain number of positions. 
-  
-**Step 1:**  
-Use online tools such as CyberChef: [CyberChef](https://cyberchef.org/#recipe=ROT13(true,true,false,13)&input=RlhFe0UwZ19LVlZWfQ) or dcode: [dcode](https://www.dcode.fr/rot-cipher)
+The "What is ROT?" challenge introduces you to the ROT encryption algorithm, a symmetric encryption technique known as a shift cipher. ROT works by shifting each letter in the alphabet a certain number of positions.
 
-**Step 2:**  
-Paste the following cipher text into the algorithmn
-```FXE{E0g_KVVV}```
+### Step-by-Step Guide
 
-**Step 3:**  
-Copy the flag and complete the challenge
-```SKR{R0t_XIII}``` 
+Follow these steps to solve the challenge:
 
-**SOLVED**
+1. **Utilize Online Tools:**
+   - Visit an online tool like CyberChef, which provides various encryption and decryption functions.
+   - CyberChef Link: [CyberChef ROT13](https://cyberchef.org/#recipe=ROT13(true,true,false,13)&input=RlhFe0UwZ19LVlZWfQ)
+
+2. **Input Cipher Text:**
+   - In the online tool, paste the provided cipher text into the algorithm:
+     ```
+     FXE{E0g_KVVV}
+     ```
+
+3. **Decrypt the Text:**
+   - Execute the ROT decryption function by clicking the appropriate button in the online tool.
+
+4. **Retrieve the Flag:**
+   - The decrypted text will reveal the flag.
+     ```
+     SKR{XXXXXXXXXXXX}
+     ```
+
+**Challenge Completed!**
+
+By using an online ROT decryption tool to decipher the provided text, you successfully revealed the flag: "SKR{R0t_XIII}". This demonstrates your understanding of the ROT encryption algorithm.
+
+Feel free to use similar techniques in future challenges involving encryption and decryption methods.
