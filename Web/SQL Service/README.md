@@ -1,19 +1,38 @@
-# SQL Service
+# SQL Service - SQL Injection Challenge
 
 ## Basic Information
-Category: Web  
-Difficulty: Medium  
-Points: 20  
+- **Category:** Web
+- **Difficulty:** Medium
+- **Points:** 20
 
 ## Solving
-The concept of of this challenge is to familiarise you with SQL injection.
-  
-**Step 1:**  
-You can try different SQL Injection payloads. The one that worked for me is  
-```' or '' = '```  
+The "SQL Service" challenge aims to familiarize you with SQL injection, a common web security vulnerability that occurs when user input is not properly sanitized.
 
-**Step 2:**   
-Copy and paste the flag to complete the challenge  
-```SKR{I_Sh0uld_3sc4p3_s1ngle_qu0te_8bc42e}```  
+### Step-by-Step Guide
 
-**SOLVED**  
+Follow these steps to solve the challenge:
+
+1. **Identify the SQL Injection Vulnerability:**
+   - Start by recognizing that the challenge likely has a SQL injection vulnerability.
+   - In SQL injection attacks, you can manipulate the application's SQL queries by injecting malicious SQL code into user input fields.
+
+2. **Exploit the SQL Injection Vulnerability:**
+   - Experiment with different SQL injection payloads to find one that works.
+   - The payload that successfully works in this case is:
+     ```
+     ' or '' = '
+     ```
+     This payload manipulates the SQL query to always evaluate as true, bypassing any authentication checks.
+
+3. **Access the Flag:**
+   - Once you successfully inject the SQL payload, the application will grant you access without a valid login.
+   - Copy and paste the flag to complete the challenge:
+     ```
+     SKR{XXXXXXXXXXX}
+     ```
+
+**Challenge Completed!**
+
+By exploiting the SQL injection vulnerability with the provided payload, you gained unauthorized access and retrieved the flag: "SKR{XXXXXXXXXXX}."
+
+This challenge underscores the importance of implementing proper input validation and escaping user input to prevent SQL injection attacks in web applications.
