@@ -1,44 +1,43 @@
-# Base64
+# Base64 - Warm Up Challenge
 
 ## Basic Information
-Category: Warm Up  
-Difficulty: Beginner  
-Points: 20  
+**Category:** Warm Up  
+**Difficulty:** Beginner  
+**Points:** 20
 
 ## Solving
-The idea of this challenge is to familiarise your with base64. Base64 is an encoding scheme that is generally used to trasnfer content-based messages over the Internet. Base64 can normally be identified by an ```=``` or ```==``` at the end of a string. Base64 can be solved using many tools online or on linux CLI.   
 
-### Online Tool  
-  
-**Step 1:**  
-Visit this link to decode base64: [CyberChef](https://cyberchef.org/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false))  
+The "Base64" challenge aims to familiarize you with the Base64 encoding scheme, commonly used for transferring content-based messages over the internet.
 
-**Step 2:**   
-Paste the following base64 into the decoder: ```U0tSe2I0c2U2NF80cjNfczBfczFtcDEzfQo=```
+### Online Tool Solution
 
-**Step 3:**   
-Copy the flag and complete the challenge
-```SKR{b4se64_4r3_s0_s1mp13}```
+**Step 1: Decode Base64 Online**
+1. Visit the following link to decode Base64: [CyberChef Base64 Decoder](https://cyberchef.org/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)).
 
-**SOLVED**  
+2. **Step 2: Paste Base64 String**
+   Copy and paste the provided Base64-encoded string into the decoder: ```U0tSe2I0c2U2NF80cjNfczBfczFtcDEzfQo=```
 
-### Kali Linux CLI
+3. **Step 3: Retrieve the Flag**
+After decoding, you will find the flag
 
-**Step 1:**  
-Echo the following base64 so that it could be piped
-```
-echo "U0tSe2I0c2U2NF80cjNfczBfczFtcDEzfQo="  
-```
+### Kali Linux CLI Solution
 
-**Step 2:**   
-Pipe the output onto base64 tool and specify decode.
-By default, base64 encodes any input.
-```
-echo "U0tSe2I0c2U2NF80cjNfczBfczFtcDEzfQo=" | base64 -d 
-```
+**Step 1: Decode Base64 Using Command Line**
+1. **Open a terminal window**
 
-**Step 3:**   
-Copy the flag and complete the challenge
-```SKR{b4se64_4r3_s0_s1mp13}```
+2. **Step 2: Echo Base64 String**  
+    Echo the Base64-encoded string to pass it through the pipeline:
+    ```bash
+    echo "U0tSe2I0c2U2NF80cjNfczBfczFtcDEzfQo="
+    ```
 
-**SOLVED**  
+3. **Step 3: Pipe and Decode**  
+    Pipe the output into the `base64` tool and specify the `-d` flag to decode the Base64:
+    ```bash
+    echo "U0tSe2I0c2U2NF80cjNfczBfczFtcDEzfQo=" | base64 -d
+    ```
+
+4. **Step 4: Retrieve the Flag**  
+    After decoding, you will obtain the flag
+
+**Challenge Completed**
