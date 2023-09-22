@@ -1,32 +1,43 @@
-# Shark Of Wire
+# Shark Of Wire - Forensics Writeup
 
 ## Basic Information
-Category: Forensics    
-Difficulty: Easy  
-Points: 20  
+**Category:** Forensics  
+**Difficulty:** Easy  
+**Points:** 20
 
 ## Solving
-The concept of this challenge is to familiarise you with wireshark tool. 
-  
-**Step 1:**  
-Download the image on linux by running the following command in terminal  
-```
+
+The "Shark Of Wire" challenge aims to introduce you to the Wireshark tool and its capabilities for analyzing network data.
+
+### Step 1: Download the Network Data
+
+Begin by downloading the provided network data file on a Linux system. You can use the following command in your terminal:
+
+```bash
 wget https://skrctf.me/files/25a0f17531dc8152380622658fde2b7e/network_data.pcap
-```
+```  
 
-**Step 2:**   
-Open the pcap file in wireshark by running the following command   
-```
+### Step 2: Open the File in Wireshark
+
+Next, you'll need to open the downloaded network_data.pcap file in Wireshark. Use the following command in your terminal:  
+
+```bash
 wireshark network_data.pcap
-```
+```  
 
-**Step 3:**   
-You will be greeted with network packets labelled in different colours. Our aim is to find the ones that are successful, or in other words, the ones highlighted in green.  
+### Step 3: Analyze the Network Packets  
 
-We won't be going through succesfully transmitted packet in the file, but groups of them. Looking at the file, we can see that green packets comes in blocks. We need to investigate each green block rather than individual packets. Click on one of the green packets and and follow the TCP stream. This way, we can investigate entire blocks rather than indivudal packets. 
+Upon opening the file in Wireshark, you'll be presented with a display of network packets, each labeled with different colors. Our objective is to identify the successful network packets, which are typically highlighted in green.
 
-**Step 4:**     
-Copy the flag and complete the challenge
-```SKR{0pen_Pcap_File_1n_Wir3Sh4rk}```
+Rather than inspecting individual packets one by one, we'll focus on groups of successful packets. Observe that green packets are often grouped together. To investigate entire blocks of successful packets, click on one of the green packets, and then follow the TCP stream.
 
-**SOLVED**  
+This approach allows you to analyze entire blocks of packets at once, making it more efficient.  
+
+### Step 4: Retrieve the Flag  
+
+As you examine the network data and follow the TCP streams of green packets, you'll eventually discover the flag:  
+
+Flag: SKR{XXXXXXXX}
+
+**Challenge Completed** 
+
