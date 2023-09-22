@@ -1,18 +1,27 @@
-# Simple Overflow
+# Simple Overflow - Warm Up Challenge
 
 ## Basic Information
-Category: Warm Up    
-Difficulty: Easy  
-Points: 20  
+- **Category:** Warm Up
+- **Difficulty:** Easy
+- **Points:** 20
 
 ## Solving
-The concept of this challenge is to familiarise you with Simple Overflow. 
-  
-**Step 1:**  
-Connect to SKRCTF webshell or ssh into it.   
+The "Simple Overflow" challenge is designed to introduce you to the concept of buffer overflow.
 
-**Step 2:**   
-It is specified that we have a limit on our name. Type a name longer than the limit  
-```SKR{XXXX}```
+### Step-by-Step Guide
 
-**SOLVED**  
+Follow these steps to solve the challenge:
+
+1. **Connect to SKRCTF Webshell or SSH:**
+   - Access the SKRCTF webshell or SSH into it, depending on your preferred method.
+
+2. **Exceed the Name Limit:**
+   - The challenge specifies that there is a limit on the length of your name. To exploit this limitation, type a name that exceeds the specified limit.
+     ```
+     SKR{XXXX}
+     ```
+     By inputting a name longer than the allowed limit, you can trigger a buffer overflow condition.
+
+**Challenge Completed!**
+
+By exceeding the name limit and triggering a buffer overflow, you have successfully solved the "Simple Overflow" challenge.
