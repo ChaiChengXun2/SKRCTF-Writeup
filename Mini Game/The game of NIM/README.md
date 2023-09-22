@@ -8,7 +8,7 @@ Points: 20
 ## Solving
   
 **Step 1:**  
-Play the game
+The goal of the game is to be the last one to retrieve stones. Play the game. 
 
 **Step 2:**  
 Copy the flag and complete the challenge  
