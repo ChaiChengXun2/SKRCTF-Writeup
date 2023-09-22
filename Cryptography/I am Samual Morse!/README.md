@@ -16,6 +16,6 @@ Clicking on the image proided shows a series of morse codes. It can be solved by
 
 **Step 2:**   
 Copy the flag and complete the challenge
-```SKR{IVE GONE WHEN U SEE THIS}```
+```SKR{XXXXXXXX}```
 
 **SOLVED**  
