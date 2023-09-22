@@ -1,21 +1,37 @@
-# My First SQL
+# My First SQL - SQL Injection Challenge
 
 ## Basic Information
-Category: Web  
-Difficulty: Easy  
-Points: 20  
+- **Category:** Web
+- **Difficulty:** Easy
+- **Points:** 20
 
 ## Solving
-The concept of this challenge is to familiarise yourself with SQL injection. SQL injection is an exploit on weak SQL database implementation. To prevent SQL injection, always remember to sanitise inputs before submitting to servers and escape user inputs. 
-  
-**Step 1:**  
-Through trial and error, I was able to find out that MySQL is used for this challenge. To exploit a weak MySQL implementation, type the following SQL into the email and password field.
-```
-' OR 1 = 1 -- 
-```  
+The "My First SQL" challenge introduces you to SQL injection, a common web security vulnerability. SQL injection occurs when user input is not properly sanitized, allowing attackers to manipulate SQL queries and potentially gain unauthorized access to a database. To prevent SQL injection, it's essential to sanitize inputs and escape user data before interacting with a database.
 
-**Step 2:**   
-Copy and paste the flag to complete the challenge  
-```SKR{Do_not_forget_to_escape_user_input_7f102f}```
+### Step-by-Step Guide
 
-**SOLVED**  
+Follow these steps to solve the challenge:
+
+1. **Identify the SQL Database:**
+   - Through trial and error, determine that the challenge is using a MySQL database.
+
+2. **Exploit the SQL Injection Vulnerability:**
+   - Exploit the weak SQL implementation by injecting SQL code into the email and password fields.
+   - Use the following SQL code:
+     ```
+     ' OR 1=1 --
+     ```
+     This input manipulates the SQL query to always return true, effectively bypassing authentication.
+
+3. **Access the Flag:**
+   - After successfully injecting the SQL code, the web application will grant access without a valid login.
+   - Access the flag by copying and pasting it from the web application:
+     ```
+     SKR{XXXXXXXX}
+     ```
+
+**Challenge Completed!**
+
+By exploiting the SQL injection vulnerability in the weak MySQL implementation, you successfully gained unauthorized access and retrieved the flag: "SKR{XXXXXXXX}."
+
+This challenge highlights the importance of implementing proper input validation and sanitization to protect against SQL injection attacks in web applications.
