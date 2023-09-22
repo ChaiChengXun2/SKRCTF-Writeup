@@ -1,17 +1,33 @@
-# Auth Me 1.0
+# Auth Me 1.0 - Binary Writeup
 
 ## Basic Information
-Category: Binary    
-Difficulty: Easy  
-Points: 20  
+**Category:** Binary  
+**Points:** 20
 
-## Solving
-The concept of this challenge is to familiarirse yourself with overwriting stack content. (I think)
-  
-**Step 1:**  
-Looking through the source code, we can see that ```gets``` is used. ```gets``` is deprecated because it does not check for buffer overflows. Therefore, it can be taken advantage of in this challenge. I don't know the actual way of solving challenges like these but through trial and error, I found that 29 random characters will break the program. The exact number might be different for you as the stack structure on your computer might be different.  
+## Objective
 
-**Step 1:**  
-Copy the flag and complete the challenge: ```SKR{OveRWr1te_loc4l_vAr14bLe_63ddcc}```
+The "Auth Me 1.0" challenge is designed to help you familiarize yourself with the concept of overflowing stack content in a binary. The objective is to exploit a vulnerability in the program that uses the `gets` function, which is known to be deprecated and prone to buffer overflows.
 
-**SOLVED**  
+## Solution
+
+To successfully complete the "Auth Me 1.0" challenge, follow these steps:
+
+**Step 1: Identify the Vulnerability**
+
+Looking through the source code provided for the binary, you can observe that the `gets` function is used to read user input. It's important to note that `gets` is deprecated and lacks buffer overflow protection, making it a potential security vulnerability.
+
+**Step 2: Determine the Overflow Length**
+
+Through trial and error, I found that you need to input 29 random characters to trigger a buffer overflow in the program. This means that if you input more than 29 characters, you will overwrite memory beyond the buffer, potentially affecting the program's execution.
+
+**Step 3: Exploit the Vulnerability**
+
+You can exploit the vulnerability by running the program and providing 29 arbitrary characters as input. Alternatively, you can use the `echo` command to automate this process. Here's an example of using `echo` to complete the challenge:
+
+```bash
+echo -en "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA" | ./auth
+```  
+
+flag: SKR{XXXX}
+
+**Challenge Finished**
