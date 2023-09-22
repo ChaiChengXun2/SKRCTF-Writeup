@@ -1,15 +1,22 @@
-# Stegnography 1
+# Steganography 1 - Steganography Writeup
 
 ## Basic Information
-Category: Stegnography    
-Difficulty: Easy  
-Points: 100  
+**Category:** Steganography  
+**Difficulty:** Easy  
+**Points:** 100
 
 ## Solving
-The concept of this challenge is to familiarise you with Steganography.   
-  
-**Step 1:**  
-Superimposing the image will give you the flag  
-```SKR{Th1s_1s_so_H@rd_T0_S33}```
 
-**SOLVED**  
+The "Steganography 1" challenge is designed to introduce you to the field of steganography.
+
+### Step 1: Decode the Hidden Message
+
+To solve this challenge, follow these steps:
+
+1. **Superimpose the Image:**
+   By superimposing the provided image, you can reveal the hidden message.
+
+2. **Retrieve the Flag:**
+   Once you've superimposed the image, you'll find the flag: SKR{XXXXXXXX}
+
+**Challenge Accomplished**  
