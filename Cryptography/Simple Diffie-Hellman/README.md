@@ -13,6 +13,6 @@ Clicking on the image proided shows an encrypted flag. It can be solved by onlin
 
 **Step 2:**   
 Copy the flag and complete the challenge
-```SKR{93_70}```
+```SKR{xxxxx}```
 
 **SOLVED**  
